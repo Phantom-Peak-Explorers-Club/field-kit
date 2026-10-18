@@ -68,8 +68,12 @@ h1 em { color: #7f352c; font-weight: 400; }
 .tool-copy p { margin: 1rem 0 1.15rem; line-height: 1.55; font-size: .91rem; }
 .tool-link { margin-top: auto; display: inline-flex; width: fit-content; align-items: center; gap: .55rem; color: #773b2d; font-size: .76rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; text-underline-offset: 4px; }
 .tool-link:hover { color: var(--plum); }
-.badge-designs { display: grid; grid-template-columns: repeat(4, 1fr); gap: .45rem; margin: 0 0 1.2rem; }
-.badge-designs img { width: 100%; height: 88px; object-fit: contain; padding: .3rem; background: #eee1c9; border: 1px solid #c6b48e; }
+.badge-artworks { position: absolute; inset: 0; pointer-events: none; }
+.badge-artworks .badge-art { position: absolute; width: auto; height: auto; object-fit: contain; filter: drop-shadow(2px 4px 2px #17091699); }
+.badge-art-curiositas { left: 21%; top: 56%; max-width: 15%; max-height: 23%; transform: rotate(-9deg); }
+.badge-art-seasons { left: 39%; top: 56%; max-width: 15%; max-height: 23%; transform: rotate(5deg); }
+.badge-art-pride { left: 57%; top: 56%; max-width: 15%; max-height: 23%; transform: rotate(-5deg); }
+.badge-art-trail { left: 76%; top: 53%; max-width: 10%; max-height: 25%; transform: rotate(7deg); }
 
 .member-section { margin-top: 5rem; padding-top: 2rem; border-top: 8px double #a99473; }
 .member-grid:empty { display: none; }
