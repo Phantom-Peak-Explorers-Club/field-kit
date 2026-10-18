@@ -1,5 +1,6 @@
 const grid = document.querySelector('#member-grid');
-const empty = document.querySelector('#member-empty');
+const section = document.querySelector('#member-tools');
+const navLink = document.querySelector('#member-nav');
 
 function validWebUrl(value) {
   try {
@@ -67,8 +68,7 @@ fetch('member-tools.json', { cache: 'no-store' })
     if (!Array.isArray(tools)) throw new Error('Member tools must be a list');
     const cards = tools.map(renderMemberTool).filter(Boolean);
     grid.replaceChildren(...cards);
-    empty.hidden = cards.length > 0;
+    section.hidden = cards.length === 0;
+    navLink.hidden = cards.length === 0;
   })
-  .catch(() => {
-    empty.querySelector('p:last-child').textContent = 'Member tools could not be loaded. Please try again shortly.';
-  });
+  .catch(() => {});

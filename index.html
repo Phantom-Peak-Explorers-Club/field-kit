@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#321b3a">
-  <meta name="description" content="The Phantom Peak Explorers' Club's collection of trails, trackers and useful tools, with a shelf for projects made by members.">
+  <meta name="theme-color" content="#211326">
+  <meta name="description" content="Open the Phantom Peak Explorers' Club Field Kit: trail records, visit planners, curious diversions and other useful files from the club desk.">
   <title>The Explorers' Field Kit · PPEC</title>
   <link rel="icon" href="assets/ppec-crest.png">
-  <link rel="stylesheet" href="styles.css?v=3">
-  <script defer src="member-tools.js?v=2"></script>
+  <link rel="stylesheet" href="styles.css?v=4">
+  <script defer src="member-tools.js?v=3"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the tools</a>
@@ -17,48 +17,60 @@
     <div class="header-inner">
       <a class="identity" href="#top" aria-label="The Explorers' Field Kit home">
         <img src="assets/ppec-crest.png" alt="" width="54" height="54">
-        <span><strong>PHANTOM PEAK</strong><small>EXPLORERS' CLUB</small></span>
+        <span><strong>Phantom Peak</strong><small>EXPLORERS' CLUB</small></span>
       </a>
+      <span class="header-mark" aria-hidden="true">PPEC <span>✦</span> EST. IN CURIOSITY</span>
       <nav aria-label="On this page">
-        <a href="#club-tools">Club tools</a>
-        <a href="#member-tools">Member tools</a>
+        <a href="#club-tools">The files</a>
+        <a id="member-nav" href="#member-tools" hidden>Fellow explorers</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
     <section class="intro" id="top" aria-labelledby="page-title">
-      <div class="intro-rule"><span>PPEC / FIELD EQUIPMENT</span><span>KEEP WITH YOU AT ALL TIMES</span></div>
-      <div class="intro-body">
-        <p class="eyebrow">An index of useful curiosities</p>
-        <h1 id="page-title">The Explorers'<br><em>Field Kit</em></h1>
-        <p class="lede">Trails to revisit, journeys to plan and a few peculiar things to try. Everything made by the club is filed here, with room for discoveries from fellow explorers.</p>
-        <a class="intro-link" href="#club-tools">Browse the kit <span aria-hidden="true">↓</span></a>
+      <div class="intro-rule"><span>PHANTOM PEAK EXPLORERS' CLUB</span><span>FIELD EQUIPMENT / 001</span></div>
+      <div class="intro-layout">
+        <div class="intro-body">
+          <p class="eyebrow">From the club desk</p>
+          <h1 id="page-title">The <em>Field Kit</em></h1>
+          <p class="lede">A drawer of useful curiosities for explorers. Revisit old trails, prepare for Stratford, follow a Jonabot mystery, or see what the club is making next.</p>
+          <a class="intro-link" href="#club-tools">Open the files <span aria-hidden="true">↘</span></a>
+          <p class="intro-aside">For the curious, the prepared, and anyone who misplaced the instructions.</p>
+        </div>
+        <div class="intro-visual">
+          <img class="desk-art" src="assets/field-kit-desk.jpg" alt="An explorer's open field case with a compass, maps and note cards">
+          <span class="visual-caption" aria-hidden="true">THE CLUB DESK <span>✦</span> FILED FOR EXPLORERS</span>
+        </div>
       </div>
-      <div class="intro-stamp" aria-hidden="true"><span>PPEC</span><strong>FIELD<br>NOTES</strong><span>EST. IN CURIOSITY</span></div>
-      <div class="intro-rule bottom"><span>OPEN TO ALL EXPLORERS</span><span>FILE NO. 001</span></div>
+      <div class="intro-rule bottom"><span>KEEP CLOSE AT HAND</span><span>FIVE FILES INSIDE <span aria-hidden="true">✦</span></span></div>
     </section>
 
     <section class="directory" id="club-tools" aria-labelledby="club-title">
       <div class="section-heading">
         <div>
-          <p class="eyebrow">01 / From the club desk</p>
-          <h2 id="club-title">PPEC tools</h2>
+          <p class="eyebrow">The club desk / 01—05</p>
+          <h2 id="club-title">Open a file</h2>
         </div>
-        <p>Five ways to plan, play and explore.</p>
+        <p>Choose what you need. Each file opens a separate club tool.</p>
       </div>
 
       <div class="tool-grid">
-        <article class="tool-card" aria-labelledby="trail-title">
+        <article class="tool-card featured" data-file="FILE 01 / ARCHIVE" aria-labelledby="trail-title">
           <div class="tool-art art-trails"><img src="assets/trail-archive-poster.png" alt="Jonabot and Jonabot Jr sorting ornate Phantom Peak trail cards at an archive desk" loading="lazy"><h3 id="trail-title">The Trail Archive</h3></div>
           <div class="tool-copy">
             <div class="card-meta"><span>01 / ARCHIVE</span><span>CANADA WATER</span></div>
-            <p>Browse trail recaps by season, year, character or theme. Each season has a PDF you can download.</p>
+            <p>The club's trail records are ready for another look. Pick a season, search for a familiar face, or take the PDF with you.</p>
+            <ul class="file-contents" aria-label="Inside this file">
+              <li>Season records</li>
+              <li>Character and theme search</li>
+              <li>Downloadable PDFs</li>
+            </ul>
             <a href="https://ppec.club/trail-notes/" class="tool-link">Explore the archive <span aria-hidden="true">↗</span></a>
           </div>
         </article>
 
-        <article class="tool-card" aria-labelledby="stratford-title">
+        <article class="tool-card" data-file="FILE 02 / PLANNER" aria-labelledby="stratford-title">
           <div class="tool-art art-stratford"><img src="assets/stratford-poster.png" alt="Jonabot and Jonabot Jr planning a journey near London Stadium and Stratford station" loading="lazy"><h3 id="stratford-title">Stratford Crowd Checker</h3></div>
           <div class="tool-copy">
             <div class="card-meta"><span>02 / PLANNER</span><span>STRATFORD</span></div>
@@ -67,7 +79,7 @@
           </div>
         </article>
 
-        <article class="tool-card" aria-labelledby="ditd-title">
+        <article class="tool-card" data-file="FILE 03 / STORY" aria-labelledby="ditd-title">
           <div class="tool-art art-ditd"><img src="assets/ditd-poster.png" alt="Jonabot and Jonabot Jr exploring a glitching puzzle console" loading="lazy"><h3 id="ditd-title">Discord in the Discord</h3></div>
           <div class="tool-copy">
             <div class="card-meta"><span>03 / INTERACTIVE TRAIL</span><span>JONABOT</span></div>
@@ -76,7 +88,7 @@
           </div>
         </article>
 
-        <article class="tool-card" aria-labelledby="badge-title">
+        <article class="tool-card" data-file="FILE 04 / CLUB PROJECT" aria-labelledby="badge-title">
           <div class="tool-art art-badges">
             <img src="assets/badge-poster-real-badges-bg.png" alt="Jonabot and Jonabot Jr at the badge design desk" loading="lazy">
             <div class="badge-artworks" role="img" aria-label="The actual Curiositas, four seasons, Pride and trail card badge designs">
@@ -94,7 +106,7 @@
           </div>
         </article>
 
-        <article class="tool-card" aria-labelledby="countdown-title">
+        <article class="tool-card" data-file="FILE 05 / COUNTDOWN" aria-labelledby="countdown-title">
           <div class="tool-art art-countdown"><img src="assets/countdown-poster.png" alt="Jonabot and Jonabot Jr waiting at a closed ticket kiosk" loading="lazy"><h3 id="countdown-title">Can I Buy Tickets Yet?</h3></div>
           <div class="tool-copy">
             <div class="card-meta"><span>05 / COUNTDOWN</span><span>PHANTOM PEAK</span></div>
@@ -105,29 +117,21 @@
       </div>
     </section>
 
-    <section class="member-section" id="member-tools" aria-labelledby="member-title">
+    <section class="member-section" id="member-tools" aria-labelledby="member-title" hidden>
       <div class="section-heading">
         <div>
-          <p class="eyebrow">02 / From fellow explorers</p>
-          <h2 id="member-title">Member-made tools</h2>
+          <p class="eyebrow">From fellow explorers</p>
+          <h2 id="member-title">The next drawer</h2>
         </div>
         <p>A place for useful things made by the wider PPEC community.</p>
       </div>
       <div id="member-grid" class="tool-grid member-grid" aria-live="polite"></div>
-      <div id="member-empty" class="empty-shelf">
-        <div class="empty-mark" aria-hidden="true"><span>?</span></div>
-        <div>
-          <p class="eyebrow">The next page is yours</p>
-          <h3>Space for another discovery</h3>
-          <p>There are no member tools filed here yet. PPEC can add them to this shelf as they arrive.</p>
-        </div>
-      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <span>THE EXPLORERS' FIELD KIT</span>
-    <span>An independent Phantom Peak Explorers' Club collection.</span>
+    <span>THE EXPLORERS' FIELD KIT <span aria-hidden="true">✦</span> PPEC</span>
+    <span>An independent Phantom Peak Explorers' Club collection. Keep exploring.</span>
   </footer>
 </body>
 </html>
