@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IM+Fell+English:ital@0;1&display=swap');
+
+:root {
+  color-scheme: light;
+  --ink: #281936;
+  --plum: #381c49;
+  --plum-dark: #24112f;
+  --paper: #f7efdb;
+  --paper-dark: #e9dcc0;
+  --rust: #ae4939;
+  --gold: #b88c3a;
+  --line: #b8a888;
+  font-family: 'DM Sans', Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background-color: var(--paper);
+  background-image: repeating-linear-gradient(0deg, transparent 0 37px, #6c543d0a 38px 39px), repeating-linear-gradient(90deg, transparent 0 37px, #6c543d08 38px 39px), radial-gradient(circle at 8% 4%, #fff9e9, transparent 38%);
+}
+a { color: inherit; }
+img { max-width: 100%; }
+.skip-link { position: absolute; top: -100px; left: 12px; z-index: 10; background: #fff; padding: .7rem 1rem; }
+.skip-link:focus { top: 12px; }
+:focus-visible { outline: 3px solid var(--rust); outline-offset: 4px; }
+
+.site-header { background: var(--plum-dark); color: var(--paper); border-bottom: 4px double #b99a64; }
+.header-inner { max-width: 1320px; margin: auto; padding: .7rem 2rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+.identity { display: inline-flex; align-items: center; gap: .75rem; text-decoration: none; min-width: 0; }
+.identity img { width: 54px; height: 54px; object-fit: contain; background: #540590; border-radius: 50%; }
+.identity span { display: flex; flex-direction: column; line-height: 1.08; letter-spacing: .1em; }
+.identity strong { font: 1.15rem 'IM Fell English', Georgia, serif; }
+.identity small { font-size: .59rem; letter-spacing: .18em; }
+.site-header nav { display: flex; gap: 1.4rem; text-transform: uppercase; font-size: .72rem; font-weight: 700; letter-spacing: .12em; }
+.site-header nav a { text-decoration: none; border-bottom: 1px solid transparent; padding-bottom: .2rem; }
+.site-header nav a:hover { border-color: currentColor; }
+
+main { max-width: 1320px; margin: auto; padding: 0 2rem 5rem; }
+.intro { position: relative; margin: 2rem 0 4.5rem; border: 1px solid var(--plum); background: #efe2c7; box-shadow: 8px 8px 0 #38214727; overflow: hidden; }
+.intro::before { content: ''; position: absolute; width: 460px; height: 460px; right: -125px; top: 20px; border: 2px dashed #9e855967; border-radius: 50%; box-shadow: 0 0 0 33px #9e85591a, 0 0 0 66px #9e855912; pointer-events: none; }
+.intro-rule { display: flex; justify-content: space-between; gap: 1rem; padding: .65rem 1.2rem; background: var(--plum); color: #f2e5c9; font-size: .64rem; font-weight: 700; letter-spacing: .22em; }
+.intro-rule.bottom { background: transparent; color: var(--plum); border-top: 1px solid var(--line); }
+.intro-body { position: relative; z-index: 1; width: min(750px, 75%); padding: 3.4rem 4rem 3.7rem; }
+.eyebrow { margin: 0 0 .8rem; color: #875839; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .23em; }
+h1, h2, h3 { font-family: 'IM Fell English', Georgia, serif; font-weight: 400; }
+h1 { margin: 0; font-size: clamp(3.7rem, 7vw, 7rem); line-height: .9; letter-spacing: -.05em; }
+h1 em { color: #7f352c; font-weight: 400; }
+.lede { margin: 1.75rem 0; max-width: 580px; font-size: 1.08rem; line-height: 1.65; }
+.intro-link { display: inline-flex; align-items: center; gap: 1rem; padding: .8rem 1.1rem; border: 1px solid var(--plum); background: var(--plum); color: #fff7e8; text-decoration: none; text-transform: uppercase; font-weight: 700; font-size: .75rem; letter-spacing: .13em; }
+.intro-link:hover { background: #603069; }
+.intro-stamp { position: absolute; right: 6.5%; top: 25%; z-index: 1; width: 210px; height: 210px; display: flex; flex-direction: column; justify-content: center; align-items: center; transform: rotate(10deg); color: #7f352c; border: 4px double currentColor; border-radius: 50%; text-align: center; font-size: .55rem; font-weight: 700; letter-spacing: .16em; }
+.intro-stamp strong { display: block; margin: .35rem 0; font: 2rem/1 'IM Fell English', Georgia, serif; letter-spacing: 0; }
+
+.section-heading { display: flex; align-items: end; justify-content: space-between; gap: 2rem; margin: 0 0 1.6rem; border-bottom: 2px solid var(--plum); padding-bottom: 1rem; }
+.section-heading h2 { margin: 0; font-size: clamp(2.6rem, 4vw, 4rem); line-height: 1; }
+.section-heading > p { margin: 0 0 .2rem; max-width: 320px; font-size: .87rem; line-height: 1.5; text-align: right; }
+.tool-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.65rem; }
+.tool-card { min-width: 0; background: #fffaf0; border: 1px solid #a99473; box-shadow: 4px 5px 0 #79634222; transition: transform .2s ease, box-shadow .2s ease; }
+.tool-card:hover { transform: translateY(-3px); box-shadow: 5px 8px 0 #79634230; }
+.tool-art { position: relative; width: 100%; aspect-ratio: 3 / 2; background: var(--plum); overflow: hidden; }
+.tool-art img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.tool-art h3 { position: absolute; left: 4.3%; right: 4.3%; bottom: 3.5%; height: 15.1%; margin: 0; color: #f6e9c9; display: flex; align-items: center; justify-content: center; text-align: center; text-transform: uppercase; font-size: clamp(1.2rem, 2.45vw, 2.3rem); line-height: 1; letter-spacing: .04em; text-shadow: 0 1px #150d1a; }
+.tool-copy { display: flex; flex-direction: column; min-height: 178px; padding: 1.1rem 1.35rem 1.3rem; }
+.card-meta { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .3rem 1rem; color: #79563e; font-size: .67rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.tool-copy p { margin: 1rem 0 1.15rem; line-height: 1.55; font-size: .91rem; }
+.tool-link { margin-top: auto; display: inline-flex; width: fit-content; align-items: center; gap: .55rem; color: #773b2d; font-size: .76rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; text-underline-offset: 4px; }
+.tool-link:hover { color: var(--plum); }
+.badge-designs { display: grid; grid-template-columns: repeat(4, 1fr); gap: .45rem; margin: 0 0 1.2rem; }
+.badge-designs img { width: 100%; height: 88px; object-fit: contain; padding: .3rem; background: #eee1c9; border: 1px solid #c6b48e; }
+
+.member-section { margin-top: 5rem; padding-top: 2rem; border-top: 8px double #a99473; }
+.member-grid:empty { display: none; }
+.member-card .tool-art { background: linear-gradient(135deg, #ad8d5a, #41244b); }
+.member-card .tool-art img { object-fit: cover; }
+.member-card .tool-copy h3 { margin: 1rem 0 0; font-size: 2rem; line-height: 1.1; }
+.member-card .tool-copy p { margin-top: .6rem; }
+.member-monogram { display: grid; place-items: center; width: 100%; height: 100%; color: #f6e9c9; font: 9rem 'IM Fell English', Georgia, serif; }
+.empty-shelf { display: flex; align-items: center; gap: 2rem; padding: 2.5rem 3rem; background: #e9dcc2; border: 1px dashed #947b59; }
+.empty-shelf[hidden] { display: none; }
+.empty-mark { flex: 0 0 85px; width: 85px; height: 85px; display: grid; place-items: center; border: 3px double var(--plum); border-radius: 50%; transform: rotate(-12deg); }
+.empty-mark span { font: 4rem 'IM Fell English', Georgia, serif; }
+.empty-shelf h3 { margin: 0; font-size: 2rem; }
+.empty-shelf p:last-child { margin-bottom: 0; line-height: 1.5; }
+.site-footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem 2rem; padding: 1.5rem max(2rem, calc((100% - 1256px)/2)); background: var(--plum-dark); color: #f2e8d1; font-size: .7rem; letter-spacing: .06em; }
+.site-footer a { text-underline-offset: 3px; }
+
+@media (max-width: 900px) {
+  .intro-body { width: 78%; padding: 2.8rem; }
+  .intro-stamp { right: 4%; width: 155px; height: 155px; }
+  .intro-stamp strong { font-size: 1.55rem; }
+  .tool-art h3 { font-size: clamp(1rem, 2.6vw, 1.65rem); }
+}
+@media (max-width: 680px) {
+  .header-inner { padding: .65rem 1rem; }
+  .identity img { width: 45px; height: 45px; }
+  .identity strong { font-size: 1rem; }
+  .identity small { font-size: .5rem; }
+  .site-header nav { gap: .7rem; font-size: .59rem; }
+  main { padding: 0 1rem 3rem; }
+  .intro { margin: 1rem 0 3rem; }
+  .intro-rule { font-size: .48rem; padding: .55rem .65rem; letter-spacing: .08em; }
+  .intro-body { width: 100%; padding: 2.4rem 1.25rem 2.6rem; }
+  .intro-stamp { display: none; }
+  h1 { font-size: clamp(3.3rem, 14vw, 5rem); }
+  .lede { font-size: .97rem; }
+  .section-heading { align-items: start; flex-direction: column; gap: .4rem; }
+  .section-heading > p { text-align: left; }
+  .tool-grid { grid-template-columns: 1fr; gap: 1.3rem; }
+  .tool-art h3 { font-size: clamp(1.05rem, 5.1vw, 2rem); }
+  .tool-copy { min-height: 0; }
+  .member-section { margin-top: 3rem; }
+  .empty-shelf { padding: 1.4rem; gap: 1rem; }
+  .empty-mark { flex-basis: 55px; width: 55px; height: 55px; }
+  .empty-mark span { font-size: 2.7rem; }
+  .empty-shelf h3 { font-size: 1.5rem; }
+  .site-footer { padding: 1.5rem 1rem; }
+}
