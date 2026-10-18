@@ -70,7 +70,7 @@ h1 em { display: block; color: #733c32; font-weight: 400; }
 .tool-card::before { content: attr(data-file); position: absolute; z-index: 3; left: 1.2rem; top: -.75rem; display: block; padding: .35rem .75rem; background: #762f37; border: 1px solid #d9af78; color: #fff1d3; font-size: .63rem; font-weight: 700; letter-spacing: .12em; white-space: nowrap; }
 .tool-art { position: relative; width: 100%; aspect-ratio: 3 / 2; overflow: hidden; background: var(--plum); }
 .tool-art > img { display: block; width: 100%; height: 100%; object-fit: cover; }
-.tool-art h3 { position: absolute; left: 4.3%; right: 4.3%; bottom: 3.5%; height: 15.1%; display: flex; align-items: center; justify-content: center; margin: 0; color: #f6e9c9; font-size: clamp(1.15rem, 2.35vw, 2.3rem); line-height: 1; letter-spacing: .04em; text-align: center; text-shadow: 0 1px #150d1a; text-transform: uppercase; }
+.visually-hidden { position: absolute !important; width: 1px !important; height: 1px !important; padding: 0 !important; margin: -1px !important; overflow: hidden !important; clip: rect(0, 0, 0, 0) !important; white-space: nowrap !important; border: 0 !important; }
 .tool-copy { display: flex; flex-direction: column; min-height: 168px; padding: 1.15rem 1.2rem 1.3rem; }
 .card-meta { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .3rem .8rem; padding-bottom: .55rem; border-bottom: 1px solid #ad9271; color: #784636; font-size: .64rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
 .tool-copy p { margin: .9rem 0 1.1rem; font-size: .91rem; line-height: 1.58; }
@@ -88,10 +88,10 @@ h1 em { display: block; color: #733c32; font-weight: 400; }
 
 .badge-artworks { position: absolute; inset: 0; pointer-events: none; }
 .badge-artworks .badge-art { position: absolute; width: auto; height: auto; object-fit: contain; filter: drop-shadow(2px 4px 2px #17091699); }
-.badge-art-curiositas { left: 21%; top: 56%; max-width: 15%; max-height: 23%; transform: rotate(-9deg); }
-.badge-art-seasons { left: 39%; top: 56%; max-width: 15%; max-height: 23%; transform: rotate(5deg); }
-.badge-art-pride { left: 57%; top: 56%; max-width: 15%; max-height: 23%; transform: rotate(-5deg); }
-.badge-art-trail { left: 76%; top: 53%; max-width: 10%; max-height: 25%; transform: rotate(7deg); }
+.badge-art-curiositas { left: 9%; top: 63%; max-width: 19%; max-height: 25%; transform: rotate(-9deg); }
+.badge-art-seasons { left: 31%; top: 62%; max-width: 19%; max-height: 25%; transform: rotate(5deg); }
+.badge-art-pride { left: 54%; top: 62%; max-width: 18%; max-height: 26%; transform: rotate(-5deg); }
+.badge-art-trail { left: 79%; top: 60%; max-width: 12%; max-height: 29%; transform: rotate(7deg); }
 
 .member-section { margin-top: 5rem; padding-top: 2rem; border-top: 5px double #9b8066; }
 .member-card::before { content: 'FELLOW EXPLORER'; }
@@ -107,7 +107,6 @@ h1 em { display: block; color: #733c32; font-weight: 400; }
   .intro-layout { grid-template-columns: 54% 46%; }
   .intro-body { padding: 2.4rem; }
   h1 { font-size: clamp(3.6rem, 7vw, 5.5rem); }
-  .tool-art h3 { font-size: clamp(1rem, 2.4vw, 1.65rem); }
 }
 @media (max-width: 700px) {
   .header-inner { padding: .55rem 1rem; gap: 1rem; }
@@ -134,7 +133,6 @@ h1 em { display: block; color: #733c32; font-weight: 400; }
   .featured .tool-copy { padding: 1.25rem; }
   .featured .tool-copy p { margin: .9rem 0 1.1rem; font-size: 1.05rem; }
   .file-contents { margin-bottom: 1.1rem; }
-  .tool-art h3 { font-size: clamp(1.05rem, 5.1vw, 2rem); }
   .tool-copy { min-height: 0; }
   .member-section { margin-top: 3rem; }
   .site-footer { padding: 1.3rem 1rem; }
