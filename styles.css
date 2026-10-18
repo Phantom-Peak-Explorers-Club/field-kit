@@ -43,7 +43,7 @@ img { max-width: 100%; }
 .site-header nav a:hover { color: #e0bb7d; }
 
 main { max-width: 1320px; margin: auto; padding: 0 2rem 5rem; }
-.intro { margin: 2rem 0 3.6rem; background: var(--paper-light); border: 1px solid #5b3a4c; box-shadow: 8px 8px 0 #32213d30; }
+.intro { margin: 2rem 0 2rem; background: var(--paper-light); border: 1px solid #5b3a4c; box-shadow: 8px 8px 0 #32213d30; }
 .intro-rule { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: .6rem 1.2rem; background: var(--plum); color: #f2dfb9; font-size: .63rem; font-weight: 700; letter-spacing: .18em; }
 .intro-rule.bottom { background: #e8d9bd; color: var(--plum); border-top: 1px solid var(--line); }
 .intro-layout { display: grid; grid-template-columns: 52% 48%; min-height: 425px; }
@@ -55,16 +55,24 @@ h1 em { display: block; color: #733c32; font-weight: 400; }
 .lede { max-width: 35rem; margin: 1.2rem 0 1.3rem; font-size: 1rem; line-height: 1.6; }
 .intro-link { display: inline-flex; align-items: center; justify-content: center; gap: 1.5rem; padding: .75rem 1rem; background: var(--plum); border: 1px solid var(--plum); color: var(--paper-light); font-size: .74rem; font-weight: 700; letter-spacing: .12em; text-decoration: none; text-transform: uppercase; }
 .intro-link:hover { background: #623367; }
-.support-note { display: flex; gap: .75rem; width: min(100%, 33rem); margin-top: 1.3rem; padding: .8rem 1rem; background: #f1e2c5; border-left: 4px solid #9a503b; box-shadow: 2px 3px 0 #7b543525; }
-.support-note-mark { flex: none; color: #924936; font: 1.25rem 'IM Fell English', Georgia, serif; line-height: 1; }
-.support-note-label { margin: 0 0 .35rem !important; color: #763e32; font-size: .61rem !important; font-weight: 700; line-height: 1.2 !important; letter-spacing: .14em; text-transform: uppercase; }
-.support-note p { margin: 0 0 .35rem; font-size: .78rem; line-height: 1.4; }
-.support-note a { color: var(--plum); font-size: .73rem; font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: .15em; }
-.support-note a:hover { color: #8d4335; }
+.intro-aside { margin: 1rem 0 0; color: #725440; font: italic .9rem 'IM Fell English', Georgia, serif; }
 .intro-visual { position: relative; min-width: 0; overflow: hidden; border-left: 5px double #97775b; background: var(--plum-dark); }
 .desk-art { display: block; width: 100%; height: 100%; min-height: 425px; object-fit: cover; object-position: 46% center; }
 .visual-caption { position: absolute; right: 1rem; bottom: 1rem; padding: .4rem .65rem; background: #211326df; border: 1px solid #d9ba88; color: #f5dfb8; font-size: .56rem; font-weight: 700; letter-spacing: .15em; white-space: nowrap; }
 .visual-caption span { margin: 0 .3rem; }
+
+.support-banner { position: relative; isolation: isolate; display: grid; grid-template-columns: minmax(0, 1fr) minmax(210px, 31%); min-height: 286px; margin: 0 0 3.6rem; overflow: hidden; background: radial-gradient(circle at 83% 48%, #8c4938 0, #582a3c 27%, transparent 53%), repeating-linear-gradient(90deg, transparent 0 43px, #ffffff08 44px 45px), #29182f; border: 5px double #c99d61; box-shadow: 7px 8px 0 #32213d30; color: #fff4d9; }
+.support-banner::before { content: ''; position: absolute; z-index: -1; inset: 12px; border: 1px solid #d7ac6a64; pointer-events: none; }
+.support-banner-copy { align-self: center; padding: 2rem clamp(1.6rem, 5vw, 4.5rem); }
+.support-banner-eyebrow { margin: 0 0 .45rem !important; color: #e1b974; font-size: .69rem !important; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
+.support-banner-eyebrow span { margin-left: .3rem; }
+.support-banner h2 { max-width: 12ch; margin: 0; font-size: clamp(2.8rem, 5vw, 5rem); line-height: .95; }
+.support-banner h2 em { color: #f4bb69; font-weight: 400; }
+.support-banner-copy > p:not(.support-banner-eyebrow) { max-width: 35rem; margin: 1rem 0 1.15rem; color: #f1dfc5; font-size: .95rem; line-height: 1.45; }
+.support-banner a { display: inline-flex; align-items: center; justify-content: center; gap: .9rem; padding: .75rem 1rem; background: #f0c172; border: 2px solid #ffdfa0; color: #281629; font-size: .75rem; font-weight: 700; letter-spacing: .09em; text-decoration: none; text-transform: uppercase; box-shadow: 4px 4px 0 #130c1b80; }
+.support-banner a:hover { background: #ffe0a0; }
+.support-banner-art { position: relative; display: grid; place-items: end center; min-width: 0; background: radial-gradient(circle at 50% 48%, #e1ac5f96 0, #bd78384d 33%, transparent 66%); }
+.support-banner-art img { display: block; width: min(100%, 325px); height: auto; max-height: 325px; object-fit: contain; object-position: bottom; filter: drop-shadow(8px 10px 8px #100914aa); }
 
 .directory { scroll-margin-top: 1rem; }
 .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 2rem; margin: 0 0 2rem; padding: 0 0 1rem; border-bottom: 3px double var(--plum); }
@@ -111,16 +119,24 @@ h1 em { display: block; color: #733c32; font-weight: 400; }
   .identity small { font-size: .48rem; }
   .site-header nav { font-size: .62rem; gap: .7rem; }
   main { padding: 0 1rem 3rem; }
-  .intro { margin: 1rem 0 2.6rem; }
+  .intro { margin: 1rem 0 1.4rem; }
   .intro-rule { padding: .5rem .7rem; font-size: .48rem; letter-spacing: .08em; }
   .intro-layout { display: flex; flex-direction: column; min-height: 0; }
   .intro-body { padding: 1.25rem 1.25rem 1.3rem; }
   h1 { font-size: clamp(3.25rem, 13vw, 4.5rem); }
   .lede { margin: .7rem 0 .9rem; font-size: .9rem; line-height: 1.45; }
-  .support-note { margin-top: 1rem; padding: .7rem .8rem; }
+  .intro-aside { display: none; }
   .intro-visual { height: 130px; border-left: 0; border-top: 4px double #97775b; }
   .desk-art { min-height: 0; height: 130px; object-position: center 50%; }
   .visual-caption { right: .5rem; bottom: .5rem; font-size: .47rem; }
+  .support-banner { display: block; min-height: 330px; margin-bottom: 2.6rem; }
+  .support-banner-copy { position: relative; z-index: 1; padding: 1.2rem; }
+  .support-banner-eyebrow { font-size: .52rem !important; letter-spacing: .08em; }
+  .support-banner h2 { max-width: 11ch; font-size: clamp(2rem, 9vw, 2.8rem); }
+  .support-banner-copy > p:not(.support-banner-eyebrow) { max-width: 49%; margin: 1.1rem 0 .8rem; font-size: .75rem; }
+  .support-banner a { gap: .35rem; padding: .55rem .65rem; font-size: .58rem; letter-spacing: .02em; }
+  .support-banner-art { position: absolute; right: .25rem; bottom: 0; width: 51%; height: 60%; }
+  .support-banner-art img { width: 100%; max-height: 100%; transform: none; }
   .section-heading { align-items: start; flex-direction: column; gap: .5rem; margin-bottom: 1.7rem; }
   .section-heading > p { text-align: left; }
   .tool-grid { grid-template-columns: 1fr; gap: 1.8rem; }
