@@ -81,7 +81,7 @@ h1 em { display: block; color: #733c32; font-weight: 400; }
 .tool-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.2rem 1.8rem; }
 .directory .tool-grid > .tool-card:last-child:nth-child(odd) { grid-column: 1 / -1; justify-self: center; width: calc(50% - .9rem); }
 .tool-card { position: relative; display: flex; flex-direction: column; min-width: 0; padding: .55rem; background: #f7ecd6; border: 1px solid #8f755e; box-shadow: 6px 7px 0 #543b4a26; }
-.tool-card::before { content: attr(data-file); position: absolute; z-index: 3; left: 1.2rem; top: -.75rem; display: block; padding: .35rem .75rem; background: #762f37; border: 1px solid #d9af78; color: #fff1d3; font-size: .63rem; font-weight: 700; letter-spacing: .12em; white-space: nowrap; }
+.tool-card::before { content: attr(data-tool); position: absolute; z-index: 3; left: 1.2rem; top: -.75rem; display: block; padding: .35rem .75rem; background: #762f37; border: 1px solid #d9af78; color: #fff1d3; font-size: .63rem; font-weight: 700; letter-spacing: .12em; white-space: nowrap; }
 .tool-art { position: relative; width: 100%; aspect-ratio: 3 / 2; overflow: hidden; background: var(--plum); }
 .tool-art > img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .visually-hidden { position: absolute !important; width: 1px !important; height: 1px !important; padding: 0 !important; margin: -1px !important; overflow: hidden !important; clip: rect(0, 0, 0, 0) !important; white-space: nowrap !important; border: 0 !important; }
