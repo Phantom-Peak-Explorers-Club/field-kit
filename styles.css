@@ -90,12 +90,6 @@ h1 em { display: block; color: #733c32; font-weight: 400; }
 .tool-copy p { margin: .9rem 0 1.1rem; font-size: .91rem; line-height: 1.58; }
 .tool-link { display: inline-flex; align-items: center; gap: .7rem; width: fit-content; margin-top: auto; padding: .55rem .7rem; background: var(--plum); color: var(--paper-light); border: 1px solid var(--plum); font-size: .7rem; font-weight: 700; letter-spacing: .09em; text-decoration: none; text-transform: uppercase; }
 .tool-link:hover { background: #633768; }
-.badge-artworks { position: absolute; inset: 0; pointer-events: none; }
-.badge-artworks .badge-art { position: absolute; width: auto; height: auto; object-fit: contain; filter: drop-shadow(2px 4px 2px #17091699); }
-.badge-art-curiositas { left: 9%; top: 63%; max-width: 19%; max-height: 25%; transform: rotate(-9deg); }
-.badge-art-seasons { left: 31%; top: 62%; max-width: 19%; max-height: 25%; transform: rotate(5deg); }
-.badge-art-pride { left: 54%; top: 62%; max-width: 18%; max-height: 26%; transform: rotate(-5deg); }
-.badge-art-trail { left: 79%; top: 60%; max-width: 12%; max-height: 29%; transform: rotate(7deg); }
 
 .member-section { margin-top: 5rem; padding-top: 2rem; border-top: 5px double #9b8066; }
 .member-card::before { content: 'FELLOW EXPLORER'; }
