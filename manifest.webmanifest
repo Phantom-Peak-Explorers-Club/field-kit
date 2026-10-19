@@ -1,0 +1,25 @@
+{
+  "id": "/field-kit/",
+  "name": "The Explorers' Field Kit",
+  "short_name": "PPEC Field Kit",
+  "description": "Tools from the Phantom Peak Explorers' Club.",
+  "start_url": "/field-kit/",
+  "scope": "/field-kit/",
+  "display": "standalone",
+  "background_color": "#f4e9d2",
+  "theme_color": "#211326",
+  "icons": [
+    {
+      "src": "assets/app-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/app-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
