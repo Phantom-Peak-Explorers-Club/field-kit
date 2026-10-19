@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="480" viewBox="0 0 480 480" fill="none">
+  <g stroke="#d9b879" stroke-width="1" opacity=".13">
+    <path d="M0 0H480M0 120H480M0 240H480M0 360H480M0 480H480M0 0V480M120 0V480M240 0V480M360 0V480M480 0V480"/>
+    <path d="M0 120 120 0M0 360 360 0M120 480 480 120M360 480 480 360" stroke-dasharray="3 9"/>
+    <circle cx="240" cy="240" r="93"/>
+    <circle cx="240" cy="240" r="72"/>
+    <circle cx="240" cy="240" r="5"/>
+    <path d="M240 130V350M130 240H350M162 162 318 318M318 162 162 318"/>
+    <path d="m240 151 13 76 76 13-76 13-13 76-13-76-76-13 76-13z"/>
+    <path d="m240 151-13 76 13 13 13-13zM329 240l-76-13-13 13 13 13z" fill="#d9b879" stroke="none" opacity=".55"/>
+    <circle cx="72" cy="72" r="32"/>
+    <path d="M72 25V119M25 72H119M72 46l6 20 20 6-20 6-6 20-6-20-20-6 20-6z"/>
+    <circle cx="408" cy="408" r="32"/>
+    <path d="M408 361V455M361 408H455M408 382l6 20 20 6-20 6-6 20-6-20-20-6 20-6z"/>
+  </g>
+  <g fill="#eacb8b" opacity=".2">
+    <circle cx="72" cy="408" r="2"/>
+    <circle cx="408" cy="72" r="2"/>
+    <circle cx="24" cy="240" r="2"/>
+    <circle cx="456" cy="240" r="2"/>
+  </g>
+</svg>
