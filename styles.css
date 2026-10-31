@@ -96,6 +96,8 @@ h1 em { display: block; color: #733c32; font-weight: 400; }
 .tool-note p { flex: 1; min-width: 0; margin: 0; }
 .tool-link { display: inline-flex; align-items: center; gap: .7rem; width: fit-content; margin-top: auto; padding: .55rem .7rem; background: var(--plum); color: var(--paper-light); border: 1px solid var(--plum); font-size: .7rem; font-weight: 700; letter-spacing: .09em; text-decoration: none; text-transform: uppercase; }
 .tool-link:hover { background: #633768; }
+.coming-tool .coming-label { background: #6e5a6b; border-color: #6e5a6b; cursor: default; }
+.coming-tool .tool-art img { object-position: center; }
 
 .member-section { margin-top: 5rem; padding-top: 2rem; border-top: 5px double #d1af74; }
 .member-card::before { content: 'FELLOW EXPLORER'; }
