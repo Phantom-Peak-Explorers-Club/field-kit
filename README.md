@@ -22,4 +22,4 @@ The Phantom Peak Explorers' Club's public directory of club tools and projects m
 
 `name`, `creator`, `description` and an `https://` URL are required. `image` and `imageAlt` are optional. Images must be in `assets/member/`. To remove a listing, delete its object from the JSON file. The order in the file is the order shown on the page.
 
-The five PPEC tools are part of `index.html`; edit those cards when a club tool changes. External member tools are listed separately, with the maker named on each card.
+The six PPEC tools are part of `index.html`; edit those cards when a club tool changes. External member tools are listed separately, with the maker named on each card.
